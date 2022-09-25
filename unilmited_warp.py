@@ -46,13 +46,13 @@ print (Fore.GREEN + "[$] Channel ~> @BlackFoxSecurityTeam")
 print (Fore.LIGHTMAGENTA_EX + "[&] Warp Plus Unlimited Script ! ")
 print (Fore.YELLOW + "=====================================") ; code_id = input(Fore.CYAN + "[+] Please Enter Your Client ID : ")
 
-
+i=0
 while True:
     try:
         warp_unlimited(code_id)
-
-        print ( Fore.GREEN + "Success ! You Got 1GB Warp + \n" + Fore.MAGENTA + "Please Wait 4 Second !")
+        i+=1
+        print ( Fore.GREEN + "Success ! You Got 1GB Warp + \n" + Fore.MAGENTA + "Please Wait 4 Second !",i,"GB Added)
         
         time.sleep(4)
     except KeyboardInterrupt:
-        print (Fore.Red + "Stopped ! ")
+        print (Fore.Red + "Stopped ! Totally You Got ",i,"GB")
